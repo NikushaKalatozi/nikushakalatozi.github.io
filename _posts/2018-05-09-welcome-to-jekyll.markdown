@@ -17,7 +17,16 @@ Go to the VM Settings --> Storage delete CentOs4.5.vmdk from Controller: SATA an
 2. If virtual machine is not listed in netdiscover:
 Go to VM settings --> Network and change from NAT to Bridged Adapter
 
-{% highlight ruby %}
+
+
+Okay let's start our pentest now, as I already mentioned I'll explain every step simple & short. <br>
+First things first, we need to scan our network to find out what's the IP address of our Kioptrix virtual machine.
+
+'netdiscover -i eth0'
+![httpauth]({{ "/images/kioptrix2_netdiscover.png" | absolute_url }})
+
+ 
+{% highlight text %}
 def print_hi(name)
   puts "Hi, #{name}"
 end
