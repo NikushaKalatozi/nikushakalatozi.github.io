@@ -22,6 +22,8 @@ Okay let's start our pentest now, as I already mentioned I'll explain every step
 First things first, we need to scan our network to find out what's the IP address of our Kioptrix virtual machine.
 
 `netdiscover -i eth0` <br>
+<br>
+<br>
 ![httpauth]({{ "/images/kioptrix2_netdiscover.png" | absolute_url }})
 
  
