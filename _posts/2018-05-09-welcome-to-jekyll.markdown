@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My road to advanced pentesting!"
+title:  "[Vulnhub] Kioptrix: Level 1.1 (#2) Walkthrough"
 date:   2018-05-09 15:07:13 +0400
 categories: jekyll update
 ---
