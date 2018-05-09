@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm not a computer security enthusiast, i just enjoy finding mistakes made by programmers.
+I'm not a computer security enthusiast, I just enjoy finding mistakes made by programmers.
 
 
 
