@@ -7,14 +7,15 @@ categories: jekyll update
 Hello fellas, today we'll walkthrough [Kioptrix](https://www.vulnhub.com/?q=kioptrix&sort=date-asc&type=vm) vulnerable machine. <br>
 I will try to explain every step simple & short. <br>
 <br>
-Virtual machine common installation problems:<br>
+Before I'll start pentest, I'll cover virtual machine common installation problems: <br>
  - Kernel panic - not syncing - Attempted to kill init!<br>
  - Virtual machine is not listed in netdiscover<br>
  
 1. We can deal with kernel panic error with following solution:
-In the VM Settings delete CentOs4.5.vmdk from Controller: SATA and add it again in new hard drive in Controller: IDE
+Go to the VM Settings --> Storage delete CentOs4.5.vmdk from Controller: SATA and add it again in new hard drive in Controller: IDE
 
-2. If virtual machine is not listed in netdiscover, go to VM settings --> Network and change from NAT to Bridged Adapter
+2. If virtual machine is not listed in netdiscover:
+Go to VM settings --> Network and change from NAT to Bridged Adapter
 
 {% highlight ruby %}
 def print_hi(name)
