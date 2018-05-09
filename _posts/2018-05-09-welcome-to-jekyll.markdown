@@ -4,8 +4,9 @@ title:  "[Vulnhub] Kioptrix: Level 1.1 (#2) Walkthrough"
 date:   2018-05-09 15:07:13 +0400
 categories: jekyll update
 ---
-Hello fellas, today we'll walkthrough '[Kioptrix]'(https://www.vulnhub.com/?q=kioptrix&sort=date-asc&type=vm) vulnerable machine. <br>
+Hello fellas, today we'll walkthrough [Kioptrix](https://www.vulnhub.com/?q=kioptrix&sort=date-asc&type=vm) vulnerable machine. <br>
 I will try to explain every step simple & short. 
+
 
 {% highlight ruby %}
 def print_hi(name)
