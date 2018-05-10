@@ -57,7 +57,7 @@ I've found nothing suspicious here, so I decided to visit webpage to see if ther
 ![httpauth]({{ "/images/website.png" | absolute_url }})
 <br/>
 <br/>
-I've checked the source code code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.
+I've checked the source code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.
 <br/>
 <br/>
 ![httpauth]({{ "/images/indexpage_source_code.png" | absolute_url }})
