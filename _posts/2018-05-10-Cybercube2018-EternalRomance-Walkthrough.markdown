@@ -133,7 +133,7 @@ Now we see only fuckin empty textbox? WTF?<br/>
 <br/>
 <br/>
 So we've got RCE right now,which means that we can execute any command we want. <br/>
-After running command `ls` in terminal, we see that we've got 3 files over there: index.php rce.php test.php<br/>
+After running command `ls` in terminal, we see that we've got 3 files over there, those files are: index.php rce.php test.php<br/>
 <br/>
 ![httpauth]({{ "/images/ls.png" | absolute_url }})
 <br/>
