@@ -39,7 +39,7 @@ Service Info: Host: ETERNALROMANCE; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 P.S From the beginning when I read that title of this vulnerable machine was EternalRomance I thought it would be easy peasy lemon squeezy with SMB Exploit,
 but later after trying lot of exploits I found that it was named EternalRomance just because to trick us. (trick was successful in my case... lol I wasted lot of time on that)
 
-Open webservice port: 80:
+Open webservice port: 80
 
 I run the `Dirb` scan for enumerating directories
 <br/>
