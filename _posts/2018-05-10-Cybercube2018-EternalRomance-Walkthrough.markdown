@@ -7,8 +7,7 @@ categories: jekyll update
 Hi, today we're gonna deal with the vulnerable machine "Eternal-Romance" which I have exploited on cyber security olympiad in Georgia called "CyberCube 2018"
 Special thanks to Georgian CERT for organizing such events & olympiads annually!<br/> (btw prizes for first 3 place were horrible but it's ok xD fuck it nvm)
 
-So let's begin
-Today’s covered topics will be:
+So let's begin today’s covered topics will be:
  - Various Port Scanning methods (my personal preference)
  - Port Analysis
  - Blind SQL Injection
