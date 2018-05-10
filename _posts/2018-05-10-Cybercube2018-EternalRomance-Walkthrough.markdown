@@ -141,7 +141,8 @@ just ignore them... Our mission is to get flag.txt just run the command <br/>
 <br/>
 Everything's done now we've got the flag and mission is completed... congratulations!
 <br/>
-Hey u there, that's not the end! READ THIS!
+Hey u there, that's not the end! READ THIS! 
+<br/>
 <br/>
 ![httpauth]({{ "/images/lasha.png" | absolute_url }})
 <br/>
