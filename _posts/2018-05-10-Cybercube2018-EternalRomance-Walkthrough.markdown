@@ -5,7 +5,7 @@ date:   2018-05-10 21:07:13 +0400
 categories: jekyll update
 ---
 Hi, today we're gonna deal with the vulnerable machine "Eternal-Romance" which I have exploited on cyber security olympiad in Georgia called "CyberCube 2018"
-Special thanks to Georgian CERT for organizing such events & olympiads annually! (btw prizes for first 3 place were horrible but it's ok xD fuck it nvm)
+Special thanks to Georgian CERT for organizing such events & olympiads annually!<br/> (btw prizes for first 3 place were horrible but it's ok xD fuck it nvm)
 
 So let's begin
 Today’s covered topics will be:
@@ -14,7 +14,7 @@ Today’s covered topics will be:
  - Blind SQL Injection
  - SMB Service Enumeration
  - DNS Zone Transfer Attack
- - RCE
+ - Remote Code Execution
 
 Port scanning gave us result: 
 <br/>
