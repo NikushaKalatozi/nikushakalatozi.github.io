@@ -144,6 +144,7 @@ Everything's done now we've got the flag and mission is completed... congratulat
 Hey u there, that's not the end! READ THIS!
 <br/>
 ![httpauth]({{ "/images/lasha.png" | absolute_url }})
+<br/>
 P.S You might wonder why we have this text in test.php... Who the hek is Lasha? Lasha Takashvili is my friend, cool guy, author of this vulnerable machine and the guy who inspired me to make this security blog. <br/>
 Don't forget to check out his blog, you'll find lot of interesting boxes there - [http://higgsx.github.io](http://higgsx.github.io)
 
