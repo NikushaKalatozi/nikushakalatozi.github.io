@@ -115,7 +115,7 @@ Feels nice right? here we got all the information we need for editing our host f
 Add new line in hosts file 
 <br/>
 `192.168.88.236 cybercube2018.eternalromance.com` <br/>
-It should look like this when you'll `cat /etc/hosts`:
+It should look like this when you'll <br/> `cat /etc/hosts`:
 <br/>
 ![httpauth]({{ "/images/cat_hosts.png" | absolute_url }})
 <br/>
