@@ -124,6 +124,7 @@ You'll see login page,as I already told u when I see login page first I run SQL 
 <br/>
 ![httpauth]({{ "/images/cat_hosts.png" | absolute_url }})
 <br/>
+<br/>
 It works! 
 Now we see only fuckin empty textbox? WTF?<br/>
 <br/>
