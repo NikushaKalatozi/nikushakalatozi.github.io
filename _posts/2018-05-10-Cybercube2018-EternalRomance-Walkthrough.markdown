@@ -130,7 +130,7 @@ Now we see only fuckin empty textbox? WTF?<br/>
 <br/>
 (if you thought this then quit pentesting right now please, it's a RCE my friend)
 <br/>
-So we've got RCE right now,which means that we can execute any command we want.
+So we've got RCE right now,which means that we can execute any command we want. <br/>
 After typing `ls` we see that we've got 3 files over there: index.php rce.php test.php<br/>
 <br/>
 ![httpauth]({{ "/images/ls.png" | absolute_url }})
