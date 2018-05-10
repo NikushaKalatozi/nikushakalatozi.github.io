@@ -78,7 +78,7 @@ There we see cube2018 folder.
 
 Now we need to access this folder, we run the following command in our terminal:
 <br/>
-`root@kali:~# smbclient \\\\192.168.88.236\\cube2018` 
+`root@kali:~# smbclient \\\\192.168.88.236\\cube2018` <br/>
 `ls`
 <br/>
 {% highlight text %}
@@ -103,7 +103,8 @@ Decrypting this text gave us result:
 
 After few minutes of thinking and googling most common 53 port issues, I realised that it was<br/>`DNS Zone Transfer Attack`
 
-so I instantly opened-up terminal and run following command: <br/>
+so I instantly opened-up terminal and run following command: 
+<br/> <br/>
 `dig axfr @192.168.88.236 eternalromance`
 <br/>
 ![httpauth]({{ "/images/dig_zone.png" | absolute_url }})
