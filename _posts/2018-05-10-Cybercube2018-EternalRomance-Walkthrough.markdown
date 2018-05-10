@@ -52,7 +52,13 @@ I run the `Dirb` scan for enumerating directories
 + http://192.168.88.236/server-status (CODE:403|SIZE:294)
 {% endhighlight %}
 <br/>
-I've found nothing suspicious here, so I decided to visit webpage to see if there was any kind of hints, I've checked the source code code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.<br/>
+I've found nothing suspicious here, so I decided to visit webpage to see if there was any kind of hints.<br/>
+
+I've checked the source code code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.
+<br/>
+<br/>
+![httpauth]({{ "/images/website.png" | absolute_url }})
+<br/>
 ![httpauth]({{ "/images/indexpage_source_code.png" | absolute_url }})
 <br/>
 (for base64 decryption I'm using: [https://www.base64decode.org/](https://www.base64decode.org/) <br/>
