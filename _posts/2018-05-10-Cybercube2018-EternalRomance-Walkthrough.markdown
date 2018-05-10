@@ -65,7 +65,7 @@ Whenever I see such a login page,first thing I do is Blind SQL Injection: `'OR' 
 
 We've got the "Login Incorrect" message, but hell no! I won't buy that fairy tales^^ <br/>
 Again I've checked source and I see code with this logic: if you would input the given POST parameters (username & password) some kind of image with name `samba.png` would appear.<br>
-When I've done this, now I only got thi samba image and nothing to grip on, as I already mentioned I've tried lot of samba exploits and none of them worked. (no, I lie, actually they worked but no session was created in meterpreter)
+When I've done this, now I only got this samba image and nothing to grip on, as I already mentioned I've tried lot of samba exploits and none of them worked. (no, I lie, actually they worked but no session was created in meterpreter)
 
 So I've thought why not to try enumerating SMB folders.
 
