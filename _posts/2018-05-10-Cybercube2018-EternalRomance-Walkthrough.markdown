@@ -134,14 +134,19 @@ Now we see only fuckin empty textbox? WTF?<br/>
 <br/>
 So we've got RCE right now,which means that we can execute any command we want. <br/>
 After running command `ls` in terminal, we see that we've got 3 files over there, those files are: index.php rce.php test.php<br/>
+just ignore them... Our mission is to get flag.txt just run the command <br/>
+`cat /home/eviltwin/flag.txt` <br/>
 <br/>
-![httpauth]({{ "/images/ls.png" | absolute_url }})
+![httpauth]({{ "/images/flag.png" | absolute_url }})
 <br/>
-Just browse this link through your browser http://cybercube2018.eternalromance.com/test.php and you'll be able to see text "aaa lasha" instead of real flag.txt of this machine. (i'm an asshole sorry for such weird ending lmao xD... but pentest is done!)<br/>
+Everything's done now we've got the flag and mission is completed... congratulations!
+<br/>
+Hey u there, that's not the end! READ THIS!
 <br/>
 ![httpauth]({{ "/images/lasha.png" | absolute_url }})
 <br/>
-P.S this should intrigue you right? Who the hek is Lasha? Lasha Takashvili is my friend, cool guy, author of this vulnerable machine and the guy who inspired me to make this security blog.
+P.S You might wonder why we have this text in test.php... Who the hek is Lasha? Lasha Takashvili is my friend, cool guy, author of this vulnerable machine and the guy who inspired me to make this security blog. <br/>
+Don't forget to check out his blog, you'll find lot of interesting boxes there - http://higgsx.github.io
 
 
 
