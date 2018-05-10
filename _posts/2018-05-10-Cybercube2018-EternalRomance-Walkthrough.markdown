@@ -4,8 +4,6 @@ title:  "CyberCube2018 EternalRomance Walkthrough"
 date:   2018-05-10 21:07:13 +0400
 categories: jekyll update
 ---
-CyberCube 2018 - EternalRomance vulnerable machine walkthrough
-
 Hi, today we're gonna deal with the vulnerable machine "Eternal-Romance" which I have exploited on cyber security olympiad in Georgia called "CyberCube 2018"
 Special thanks to Georgian CERT for organizing such events & olympiads annually! (btw prizes for first 3 place were horrible but it's ok xD fuck it nvm)
 
@@ -54,7 +52,7 @@ I run the `Dirb` scan for enumerating directories
 + http://192.168.88.236/server-status (CODE:403|SIZE:294)
 {% endhighlight %}
 <br/>
-I've found nothing suspicious here, so I decided to visit webpage to see if there was any kind of hints, I've checked the source code code of index.html and there I've found text which was encrypted via Base64 encryption.
+I've found nothing suspicious here, so I decided to visit webpage to see if there was any kind of hints, I've checked the source code code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.<br/>
 ![httpauth]({{ "/images/indexpage_source_code.png" | absolute_url }})
 <br/>
 (for base64 decryption I'm using: https://www.base64decode.org/)
@@ -76,7 +74,7 @@ So I've thought why not to try enumerating SMB folders.
 ![httpauth]({{ "/images/smb_folder_list.png" | absolute_url }})
 <br/>
 
-There we see `cube2018` folder.
+There we see cube2018 folder.
 
 Now we need to access this folder, we run the following command in our terminal:
 <br/>
@@ -89,7 +87,7 @@ Now we need to access this folder, we run the following command in our terminal:
   Haha.txt                            N       61  Tue Apr 10 04:40:09 2018
 {% endhighlight %}
 
-Now let's exit from smb process with `Ctrl + C` and run the following command in terminal to download `Haha.txt` from our SMB folder.
+Now let's exit from smb process with `Ctrl + C` and run the following command in terminal to download Haha.txt from our SMB folder.
 <br/>
 `smbget smb://192.168.88.236/cube2018/Haha.txt`
 
@@ -103,19 +101,19 @@ And again we've got text which is encrypted via Base64 encryption
 Decrypting this text gave us result: 
 `name: eternalromance, protocol: dns(53/tcp)
 
-After few minutes of thinking and googling most common 53 port issues, I realised that it was `DNS Zone Transfer Attack`
+After few minutes of thinking and googling most common 53 port issues, I realised that it was<br/>`DNS Zone Transfer Attack`
 
-so I instantly opened-up terminal and run following command:
+so I instantly opened-up terminal and run following command: <br/>
 `dig axfr @192.168.88.236 eternalromance`
 <br/>
 ![httpauth]({{ "/images/dig_zone.png" | absolute_url }})
 <br/>
-Feels nice right? here we got all the information we need for editing our host file, so what are we waiting for?
+Feels nice right? here we got all the information we need for editing our host file, so what are we waiting for? <br/>
 `nano /etc/hosts` 
 <br/>
 Add new line in hosts file 
 <br/>
-`192.168.88.236 cybercube2018.eternalromance.com`
+`192.168.88.236 cybercube2018.eternalromance.com` <br/>
 It should look like this when you'll `cat /etc/hosts`:
 <br/>
 ![httpauth]({{ "/images/cat_hosts.png" | absolute_url }})
@@ -126,18 +124,18 @@ You'll see login page,as I already told u when I see login page first I run SQL 
 ![httpauth]({{ "/images/cat_hosts.png" | absolute_url }})
 <br/>
 It works! 
-Now we see only fuckin empty textbox? WTF? 
+Now we see only fuckin empty textbox? WTF?<br/>
 <br/>
 ![httpauth]({{ "/images/rce_textbox.png" | absolute_url }})
 <br/>
 (if you thought this then quit pentesting right now please, it's a RCE my friend)
 <br/>
 So we've got RCE right now,which means that we can execute any command we want.
-After typing `ls` we see that we've got 3 files over there: index.php rce.php test.php
+After typing `ls` we see that we've got 3 files over there: index.php rce.php test.php<br/>
 <br/>
 ![httpauth]({{ "/images/ls.png" | absolute_url }})
 <br/>
-Just browse this link through your browser http://cybercube2018.eternalromance.com/test.php and you'll be able to see text "aaa lasha" instead of real flag.txt of this machine. (i'm an asshole sorry for such weird ending lmao xD... but pentest is done!)
+Just browse this link through your browser http://cybercube2018.eternalromance.com/test.php and you'll be able to see text "aaa lasha" instead of real flag.txt of this machine. (i'm an asshole sorry for such weird ending lmao xD... but pentest is done!)<br/>
 <br/>
 ![httpauth]({{ "/images/lasha.png" | absolute_url }})
 <br/>
