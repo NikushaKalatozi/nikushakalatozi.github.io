@@ -59,6 +59,7 @@ I've checked the source code code of index.html and there I've found text which 
 <br/>
 ![httpauth]({{ "/images/website.png" | absolute_url }})
 <br/>
+<br/>
 ![httpauth]({{ "/images/indexpage_source_code.png" | absolute_url }})
 <br/>
 (for base64 decryption I'm using: [https://www.base64decode.org/](https://www.base64decode.org/) <br/>
