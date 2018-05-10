@@ -55,7 +55,7 @@ I run the `Dirb` scan for enumerating directories
 I've found nothing suspicious here, so I decided to visit webpage to see if there was any kind of hints, I've checked the source code code of index.html and there I've found text which was encrypted via<br/> Base64 encryption.<br/>
 ![httpauth]({{ "/images/indexpage_source_code.png" | absolute_url }})
 <br/>
-(for base64 decryption I'm using: https://www.base64decode.org/)
+(for base64 decryption I'm using: [https://www.base64decode.org/](https://www.base64decode.org/) <br/>
 I decrypted this Base64 encryption and got this result = `/cybercube2018-eternalromance`
 It was obvious that this was hidden directory so I entered http://192.168.88.236/cybercube2018-eternalromance
 
