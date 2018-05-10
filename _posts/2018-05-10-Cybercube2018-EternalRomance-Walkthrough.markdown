@@ -140,7 +140,7 @@ Just browse this link through your browser http://cybercube2018.eternalromance.c
 <br/>
 ![httpauth]({{ "/images/lasha.png" | absolute_url }})
 <br/>
-P.S this should intrigue you right? Who the hek is Lasha? Lasha Takashvili is a cool guy, author of this vulnerable machine and the guy who inspired me to make this security blog.
+P.S this should intrigue you right? Who the hek is Lasha? Lasha Takashvili is my friend, cool guy, author of this vulnerable machine and the guy who inspired me to make this security blog.
 
 
 
