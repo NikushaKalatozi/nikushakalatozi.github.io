@@ -128,7 +128,7 @@ It should look like this when you'll run the following command<br/> `cat /etc/ho
 Now open up your browser and browse http://cybercube2018.eternalromance.com/
 You'll see login page,as I already told u when I see login page first I run SQL Injection: `'OR' 1=1`
 <br/>
-![httpauth]({{ "/images/cat_hosts.png" | absolute_url }})
+![httpauth]({{ "/images/rce_login.png" | absolute_url }})
 <br/>
 <br/>
 It works! 
